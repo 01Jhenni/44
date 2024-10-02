@@ -11,6 +11,7 @@ pdf = pdfplumber.open(pdf_path)
 wb = load_workbook(excel_path)
 ws = wb.active
 
+
 # Adiciona cabeçalhos na planilha Excel se não houver
 header = ["Código", "Descrição", "Grupo de Produto", "Unidade", "Tipo do Produto", "NCM", "Cod. Barras", "Estoque Mínimo", "Ponto de Pedido", "Estoque Máximo"]
 if ws.max_row == 1 and ws.cell(row=1, column=1).value is None:
